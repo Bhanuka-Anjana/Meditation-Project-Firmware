@@ -14,7 +14,7 @@
 /****************************************************** The macro defines the TCA9554PWR information ******************************************************/ 
 
 #define TCA9554_ADDRESS         0x20                      // TCA9554PWR I2C address
-
+// TCA9554PWR寄存器地址
 #define TCA9554_INPUT_REG       0x00                      // Input register,input level
 #define TCA9554_OUTPUT_REG      0x01                      // Output register, high and low level output 
 #define TCA9554_Polarity_REG    0x02                      // The Polarity Inversion register (register 2) allows polarity inversion of pins defined as inputs by the Configuration register.  
@@ -33,8 +33,8 @@
 #define EXIO_PIN8   8
 
 /*****************************************************  Operation register REG   ****************************************************/   
-uint8_t I2C_Read_EXIO(uint8_t REG);                              // Read the value of the TCA9554PWR register REG
-uint8_t I2C_Read_EXIO(uint8_t REG,uint8_t Data);                // Write Data to the REG register of the TCA9554PWR
+uint8_t I2C_Read_EXIO(uint8_t REG);                         // Read the value of the TCA9554PWR register REG
+uint8_t I2C_Write_EXIO(uint8_t REG,uint8_t Data);           // Write Data to the REG register of the TCA9554PWR
 /********************************************************** Set EXIO mode **********************************************************/       
 void Mode_EXIO(uint8_t Pin,uint8_t State);                  // Set the mode of the TCA9554PWR Pin. The default is Output mode (output mode or input mode). State: 0= Output mode 1= input mode   
 void Mode_EXIOS(uint8_t PinState);                          // Set the mode of the 7 pins from the TCA9554PWR with PinState  
