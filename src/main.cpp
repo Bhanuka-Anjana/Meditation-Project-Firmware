@@ -60,6 +60,7 @@ void setup() {
   lv_label_set_text( label, "Hello Muzafar, I'm LVGL!" );
   lv_obj_align( label, LV_ALIGN_CENTER, 0, 0 );
 
+
 }
 
 void loop() {
