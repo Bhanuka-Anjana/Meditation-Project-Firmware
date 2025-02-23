@@ -14,6 +14,15 @@ void* allocate_psram(size_t size) {
   return ptr;
 }
 
+#if LV_USE_LOG != 0
+/* Serial debugging */
+void my_print(lv_log_level_t level, const char * buf)
+{
+    Serial.printf(buf);
+    Serial.flush();
+}
+#endif
+
 /* Display flushing */
 void my_disp_flush (lv_display_t *disp, const lv_area_t *area, uint8_t *pixelmap)
 {
@@ -41,6 +50,19 @@ void setup() {
   Set_EXIO(EXIO_PIN8,Low);
   LCD_Init();
 
+  Serial.print("Heap size: ");
+  Serial.println(ESP.getHeapSize());
+  Serial.print("Heap free size: ");
+  Serial.println(ESP.getFreeHeap());
+  Serial.print("PSRAM size: ");
+  Serial.println(ESP.getPsramSize());
+  Serial.print("PSRAM free size: ");
+  Serial.println(ESP.getFreePsram());
+
+  #if LV_USE_LOG != 0
+  lv_log_register_print_cb( my_print ); /* register print function for debugging */
+#endif
+
   lv_init();
 
   lv_color_t* buf1 = (lv_color_t*)allocate_psram(BUFFER_SIZE_BYTES);
@@ -51,6 +73,8 @@ void setup() {
     while(1) { delay(100); }
   }
 
+
+
   static lv_disp_t* disp;
   disp = lv_display_create( screenWidth, screenHeight );
   lv_display_set_buffers( disp, buf1, buf2, BUFFER_PIXELS * sizeof(lv_color_t), LV_DISPLAY_RENDER_MODE_PARTIAL );
@@ -60,7 +84,16 @@ void setup() {
   lv_label_set_text( label, "Hello Muzafar, I'm LVGL!" );
   lv_obj_align( label, LV_ALIGN_CENTER, 0, 0 );
 
+  printf("Setup done\n");
 
+  Serial.print("Heap size: ");
+  Serial.println(ESP.getHeapSize());
+  Serial.print("Heap free size: ");
+  Serial.println(ESP.getFreeHeap());
+  Serial.print("PSRAM size: ");
+  Serial.println(ESP.getPsramSize());
+  Serial.print("PSRAM free size: ");
+  Serial.println(ESP.getFreePsram());
 }
 
 void loop() {
