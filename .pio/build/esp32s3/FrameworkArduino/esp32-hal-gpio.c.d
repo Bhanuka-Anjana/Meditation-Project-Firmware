@@ -1,23 +1,23 @@
 .pio/build/esp32s3/FrameworkArduino/esp32-hal-gpio.c.o: \
- C:/Users/bhanu/.platformio/packages/framework-arduinoespressif32@src-36b172f5f4482da14324b9ce108a8e04/cores/esp32/esp32-hal-gpio.c \
- C:/Users/bhanu/.platformio/packages/framework-arduinoespressif32@src-36b172f5f4482da14324b9ce108a8e04/cores/esp32/esp32-hal-gpio.h \
- C:/Users/bhanu/.platformio/packages/framework-arduinoespressif32@src-36b172f5f4482da14324b9ce108a8e04/variants/esp32s3/pins_arduino.h \
- C:/Users/bhanu/.platformio/packages/framework-arduinoespressif32@src-36b172f5f4482da14324b9ce108a8e04/cores/esp32/esp32-hal.h \
- C:/Users/bhanu/.platformio/packages/framework-arduinoespressif32@src-36b172f5f4482da14324b9ce108a8e04/cores/esp32/esp32-hal-log.h \
- C:/Users/bhanu/.platformio/packages/framework-arduinoespressif32@src-36b172f5f4482da14324b9ce108a8e04/cores/esp32/esp32-hal-matrix.h \
- C:/Users/bhanu/.platformio/packages/framework-arduinoespressif32@src-36b172f5f4482da14324b9ce108a8e04/cores/esp32/esp32-hal-uart.h \
- C:/Users/bhanu/.platformio/packages/framework-arduinoespressif32@src-36b172f5f4482da14324b9ce108a8e04/cores/esp32/esp32-hal-touch.h \
- C:/Users/bhanu/.platformio/packages/framework-arduinoespressif32@src-36b172f5f4482da14324b9ce108a8e04/cores/esp32/esp32-hal-touch-ng.h \
- C:/Users/bhanu/.platformio/packages/framework-arduinoespressif32@src-36b172f5f4482da14324b9ce108a8e04/cores/esp32/esp32-hal-dac.h \
- C:/Users/bhanu/.platformio/packages/framework-arduinoespressif32@src-36b172f5f4482da14324b9ce108a8e04/cores/esp32/esp32-hal-adc.h \
- C:/Users/bhanu/.platformio/packages/framework-arduinoespressif32@src-36b172f5f4482da14324b9ce108a8e04/cores/esp32/esp32-hal-spi.h \
- C:/Users/bhanu/.platformio/packages/framework-arduinoespressif32@src-36b172f5f4482da14324b9ce108a8e04/cores/esp32/esp32-hal-i2c.h \
- C:/Users/bhanu/.platformio/packages/framework-arduinoespressif32@src-36b172f5f4482da14324b9ce108a8e04/cores/esp32/esp32-hal-ledc.h \
- C:/Users/bhanu/.platformio/packages/framework-arduinoespressif32@src-36b172f5f4482da14324b9ce108a8e04/cores/esp32/esp32-hal-rmt.h \
- C:/Users/bhanu/.platformio/packages/framework-arduinoespressif32@src-36b172f5f4482da14324b9ce108a8e04/cores/esp32/esp32-hal-sigmadelta.h \
- C:/Users/bhanu/.platformio/packages/framework-arduinoespressif32@src-36b172f5f4482da14324b9ce108a8e04/cores/esp32/esp32-hal-timer.h \
- C:/Users/bhanu/.platformio/packages/framework-arduinoespressif32@src-36b172f5f4482da14324b9ce108a8e04/cores/esp32/esp32-hal-bt.h \
- C:/Users/bhanu/.platformio/packages/framework-arduinoespressif32@src-36b172f5f4482da14324b9ce108a8e04/cores/esp32/esp32-hal-psram.h \
- C:/Users/bhanu/.platformio/packages/framework-arduinoespressif32@src-36b172f5f4482da14324b9ce108a8e04/cores/esp32/esp32-hal-rgb-led.h \
- C:/Users/bhanu/.platformio/packages/framework-arduinoespressif32@src-36b172f5f4482da14324b9ce108a8e04/cores/esp32/esp32-hal-cpu.h \
- C:/Users/bhanu/.platformio/packages/framework-arduinoespressif32@src-36b172f5f4482da14324b9ce108a8e04/cores/esp32/esp32-hal-periman.h
+ C:/Users/bhanu/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-gpio.c \
+ C:/Users/bhanu/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-gpio.h \
+ C:/Users/bhanu/.platformio/packages/framework-arduinoespressif32/variants/esp32s3/pins_arduino.h \
+ C:/Users/bhanu/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal.h \
+ C:/Users/bhanu/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-log.h \
+ C:/Users/bhanu/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-matrix.h \
+ C:/Users/bhanu/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-uart.h \
+ C:/Users/bhanu/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-touch.h \
+ C:/Users/bhanu/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-touch-ng.h \
+ C:/Users/bhanu/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-dac.h \
+ C:/Users/bhanu/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-adc.h \
+ C:/Users/bhanu/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-spi.h \
+ C:/Users/bhanu/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-i2c.h \
+ C:/Users/bhanu/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-ledc.h \
+ C:/Users/bhanu/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-rmt.h \
+ C:/Users/bhanu/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-sigmadelta.h \
+ C:/Users/bhanu/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-timer.h \
+ C:/Users/bhanu/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-bt.h \
+ C:/Users/bhanu/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-psram.h \
+ C:/Users/bhanu/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-rgb-led.h \
+ C:/Users/bhanu/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-cpu.h \
+ C:/Users/bhanu/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-periman.h

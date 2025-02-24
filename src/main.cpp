@@ -2,12 +2,13 @@
 #include "Display_ST7701.h"
 #include "TCA9554PWR.h"
 #include <lvgl.h>
+#include <ui/ui.h>
 
 static uint32_t screenWidth = 480;
 static uint32_t screenHeight = 480;
 
 const size_t BUFFER_PIXELS = 480 * 480;  // Total pixels per buffer
-const size_t BUFFER_SIZE_BYTES = BUFFER_PIXELS * sizeof(lv_color_t);
+const size_t BUFFER_SIZE_BYTES = BUFFER_PIXELS * sizeof(lv_color_t)/2;
 
 void* allocate_psram(size_t size) {
   void* ptr = ps_malloc(size);
@@ -73,16 +74,15 @@ void setup() {
     while(1) { delay(100); }
   }
 
-
-
   static lv_disp_t* disp;
   disp = lv_display_create( screenWidth, screenHeight );
   lv_display_set_buffers( disp, buf1, buf2, BUFFER_PIXELS * sizeof(lv_color_t), LV_DISPLAY_RENDER_MODE_PARTIAL );
   lv_display_set_flush_cb( disp, my_disp_flush );
 
-  lv_obj_t *label = lv_label_create( lv_screen_active() );
-  lv_label_set_text( label, "Hello Muzafar, I'm LVGL!" );
-  lv_obj_align( label, LV_ALIGN_CENTER, 0, 0 );
+  // lv_obj_t *label = lv_label_create( lv_screen_active() );
+  // lv_label_set_text( label, "Hello Muzafar, I'm LVGL!" );
+  // lv_obj_align( label, LV_ALIGN_CENTER, 0, 0 );
+  ui_init();
 
   printf("Setup done\n");
 
