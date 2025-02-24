@@ -7,4 +7,5 @@
  .pio/libdeps/esp32s3/lvgl/src/stdlib/clib/../../../../lv_conf.h \
  .pio/libdeps/esp32s3/lvgl/src/stdlib/clib/../lv_string.h \
  .pio/libdeps/esp32s3/lvgl/src/stdlib/clib/../../misc/lv_types.h \
- .pio/libdeps/esp32s3/lvgl/src/stdlib/clib/../../misc/../lv_conf_internal.h
+ .pio/libdeps/esp32s3/lvgl/src/stdlib/clib/../../misc/../lv_conf_internal.h \
+ .pio/libdeps/esp32s3/lvgl/src/stdlib/clib/../../stdlib/lv_mem.h

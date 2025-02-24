@@ -192,9 +192,6 @@
  .pio/libdeps/esp32s3/lvgl/src/core/../others/sysmon/../../others/observer/../../core/lv_obj.h \
  .pio/libdeps/esp32s3/lvgl/src/core/../stdlib/builtin/lv_tlsf.h \
  .pio/libdeps/esp32s3/lvgl/src/core/../stdlib/builtin/../../lv_conf_internal.h \
- .pio/libdeps/esp32s3/lvgl/src/core/../stdlib/builtin/../../osal/lv_os.h \
- .pio/libdeps/esp32s3/lvgl/src/core/../stdlib/builtin/../../misc/lv_ll.h \
- .pio/libdeps/esp32s3/lvgl/src/core/../stdlib/builtin/../../misc/lv_types.h \
  .pio/libdeps/esp32s3/lvgl/src/core/../layouts/lv_layout.h \
  .pio/libdeps/esp32s3/lvgl/src/core/../misc/lv_anim_private.h \
  .pio/libdeps/esp32s3/lvgl/src/core/../tick/lv_tick_private.h \
@@ -204,7 +201,6 @@
  .pio/libdeps/esp32s3/lvgl/src/core/../draw/sw/lv_draw_sw.h \
  .pio/libdeps/esp32s3/lvgl/src/core/../draw/sw/../lv_draw_private.h \
  .pio/libdeps/esp32s3/lvgl/src/core/../stdlib/builtin/lv_tlsf_private.h \
- .pio/libdeps/esp32s3/lvgl/src/core/../stdlib/builtin/lv_tlsf.h \
  .pio/libdeps/esp32s3/lvgl/src/core/../others/sysmon/lv_sysmon_private.h \
  .pio/libdeps/esp32s3/lvgl/src/core/../others/sysmon/lv_sysmon.h \
  .pio/libdeps/esp32s3/lvgl/src/core/../layouts/lv_layout_private.h \

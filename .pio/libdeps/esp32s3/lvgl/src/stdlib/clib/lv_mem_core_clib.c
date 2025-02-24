@@ -9,6 +9,7 @@
 #if LV_USE_STDLIB_MALLOC == LV_STDLIB_CLIB
 #include "../../stdlib/lv_mem.h"
 #include <stdlib.h>
+#include <esp_heap_caps.h>
 
 /*********************
  *      DEFINES
@@ -61,17 +62,21 @@ void lv_mem_remove_pool(lv_mem_pool_t pool)
 
 void * lv_malloc_core(size_t size)
 {
-    return malloc(size);
+    // return malloc(size);
+    return heap_caps_malloc(size, MALLOC_CAP_SPIRAM);
 }
 
 void * lv_realloc_core(void * p, size_t new_size)
 {
-    return realloc(p, new_size);
+    // return realloc(p, new_size);
+    return heap_caps_realloc(p, new_size, MALLOC_CAP_SPIRAM);
 }
 
 void lv_free_core(void * p)
 {
-    free(p);
+    // free(p);
+    heap_caps_free(p);
+
 }
 
 void lv_mem_monitor_core(lv_mem_monitor_t * mon_p)

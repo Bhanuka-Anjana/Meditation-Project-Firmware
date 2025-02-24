@@ -4,11 +4,14 @@
 #include <lvgl.h>
 #include <ui/ui.h>
 
-static uint32_t screenWidth = 480;
-static uint32_t screenHeight = 480;
+static const uint32_t screenWidth = 480;
+static const uint32_t screenHeight = 480;
 
-const size_t BUFFER_PIXELS = 480 * 480;  // Total pixels per buffer
-const size_t BUFFER_SIZE_BYTES = BUFFER_PIXELS * sizeof(lv_color_t)/2;
+// const size_t BUFFER_PIXELS = 480 * 480;  // Total pixels per buffer
+// const size_t BUFFER_SIZE_BYTES = BUFFER_PIXELS * sizeof(lv_color_t)/2;
+
+enum { SCREENBUFFER_SIZE_PIXELS = screenWidth * screenHeight / 10 };
+static lv_color_t buf [SCREENBUFFER_SIZE_PIXELS];
 
 void* allocate_psram(size_t size) {
   void* ptr = ps_malloc(size);
@@ -66,17 +69,17 @@ void setup() {
 
   lv_init();
 
-  lv_color_t* buf1 = (lv_color_t*)allocate_psram(BUFFER_SIZE_BYTES);
-  lv_color_t* buf2 = (lv_color_t*)allocate_psram(BUFFER_SIZE_BYTES);
+  // lv_color_t* buf1 = (lv_color_t*)allocate_psram(BUFFER_SIZE_BYTES);
+  // lv_color_t* buf2 = (lv_color_t*)allocate_psram(BUFFER_SIZE_BYTES);
 
-  if(!buf1 || !buf2) {
-    Serial.println("Error allocating PSRAM buffer");
-    while(1) { delay(100); }
-  }
+  // if(!buf1 || !buf2) {
+  //   Serial.println("Error allocating PSRAM buffer");
+  //   while(1) { delay(100); }
+  // }
 
   static lv_disp_t* disp;
   disp = lv_display_create( screenWidth, screenHeight );
-  lv_display_set_buffers( disp, buf1, buf2, BUFFER_PIXELS * sizeof(lv_color_t), LV_DISPLAY_RENDER_MODE_PARTIAL );
+  lv_display_set_buffers( disp, buf, NULL, SCREENBUFFER_SIZE_PIXELS * sizeof(lv_color_t), LV_DISPLAY_RENDER_MODE_PARTIAL );
   lv_display_set_flush_cb( disp, my_disp_flush );
 
   // lv_obj_t *label = lv_label_create( lv_screen_active() );

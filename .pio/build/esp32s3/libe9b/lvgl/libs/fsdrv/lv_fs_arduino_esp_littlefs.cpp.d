@@ -429,9 +429,6 @@
  .pio/libdeps/esp32s3/lvgl/src/libs/fsdrv/../../core/../others/sysmon/lv_sysmon.h \
  .pio/libdeps/esp32s3/lvgl/src/libs/fsdrv/../../core/../stdlib/builtin/lv_tlsf.h \
  .pio/libdeps/esp32s3/lvgl/src/libs/fsdrv/../../core/../stdlib/builtin/../../lv_conf_internal.h \
- .pio/libdeps/esp32s3/lvgl/src/libs/fsdrv/../../core/../stdlib/builtin/../../osal/lv_os.h \
- .pio/libdeps/esp32s3/lvgl/src/libs/fsdrv/../../core/../stdlib/builtin/../../misc/lv_ll.h \
- .pio/libdeps/esp32s3/lvgl/src/libs/fsdrv/../../core/../stdlib/builtin/../../misc/lv_types.h \
  .pio/libdeps/esp32s3/lvgl/src/libs/fsdrv/../../core/../tick/lv_tick.h \
  .pio/libdeps/esp32s3/lvgl/src/libs/fsdrv/../../core/../layouts/lv_layout.h \
  .pio/libdeps/esp32s3/lvgl/src/libs/fsdrv/../../core/../misc/lv_timer_private.h \
@@ -450,7 +447,6 @@
  .pio/libdeps/esp32s3/lvgl/src/libs/fsdrv/../../core/../draw/sw/lv_draw_sw_mask_private.h \
  .pio/libdeps/esp32s3/lvgl/src/libs/fsdrv/../../core/../draw/sw/lv_draw_sw_mask.h \
  .pio/libdeps/esp32s3/lvgl/src/libs/fsdrv/../../core/../stdlib/builtin/lv_tlsf_private.h \
- .pio/libdeps/esp32s3/lvgl/src/libs/fsdrv/../../core/../stdlib/builtin/lv_tlsf.h \
  .pio/libdeps/esp32s3/lvgl/src/libs/fsdrv/../../core/../others/sysmon/lv_sysmon_private.h \
  .pio/libdeps/esp32s3/lvgl/src/libs/fsdrv/../../core/../others/sysmon/lv_sysmon.h \
  .pio/libdeps/esp32s3/lvgl/src/libs/fsdrv/../../core/../layouts/lv_layout_private.h \
